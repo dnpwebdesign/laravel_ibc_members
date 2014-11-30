@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap
+/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        <style>
+            table form { margin-bottom: 0; }
+            form ul { margin-left: 0; list-style: none; }
+            .error { color: red; font-style: italic; }
+            body { padding-top: 20px; }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            
+            
+<h1>Edit User</h1>
+<form method="POST" action="http://localhost/www/laravel_ibc_members/ibc_members/public/users/1" accept-charset="UTF-8"><input name="_method" type="hidden" value="PATCH"><input name="_token" type="hidden" value="hM1GtC7VOGV1afyZN0IWMtB3h6SFgrnQioQoZers">    <ul>
+        <li>
+            <label for="type_id">Type:</label>            <select id="type_id" name="type_id"><option value="1">student</option><option value="2" selected="selected">professional</option></select>            <input name="type_id" type="text" value="2" id="type_id">        </li>
+        <li>
+            <label for="username">Username:</label>            <input name="username" type="text" value="john_doe" id="username">        </li>
+        <li>
+            <label for="password">Password:</label>            <input name="password" type="text" value="johndoe" id="password">        </li>
+        <li>
+            <label for="email">Email:</label>            <input name="email" type="text" value="johndoe@gmail.com" id="email">        </li>
+        <li>
+            <label for="phone">Phone:</label>            <input name="phone" type="text" value="123456" id="phone">        </li>
+        <li>
+            <label for="name">Name:</label>            <input name="name" type="text" value="John Doe" id="name">        </li>
+        <li>
+            <input class="btn btn-info" type="submit" value="Update">            <a href="http://localhost/www/laravel_ibc_members/ibc_members/public/users?1" class="btn">Cancel</a>        </li>
+    </ul>
+</form>
+
+        </div>
+
+    </body>
+
+</html>
